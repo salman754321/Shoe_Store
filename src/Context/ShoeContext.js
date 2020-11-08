@@ -15,6 +15,13 @@ export const ShoeContext=createContext(initialState);
 export const ShoeProvider=({children})=>{
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
+    function getDetails(id){
+      console.log(id)
+      let as=state.Shoes.filter((a)=>a.id===id);
+      console.log(as)
+      return as;
+    }
+
     function CountItems() {
         return state.Cart.length;
     }
@@ -43,9 +50,7 @@ export const ShoeProvider=({children})=>{
       }
 
       function calculateAmmount(){
-        let am=0; 
       let as= state.Cart.reduce((am,sp)=>am+sp.price,0)
-      console.log(as)
         return as;
       }
    return(
@@ -59,6 +64,7 @@ export const ShoeProvider=({children})=>{
            RemoveToCart,
            calculateAmmount,
            exist,
+           getDetails,
         }
     }>
         {children}

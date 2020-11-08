@@ -5,6 +5,7 @@ import "../Css/Store.css"
 import {ShoppingCart} from "@material-ui/icons"
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
 import { ShoeContext } from '../Context/ShoeContext';
+import { NavLink } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -73,9 +74,11 @@ export default function Store() {
         </CardContent>
       </CardActionArea>
       <CardActions>
+        <NavLink to={`/${shoe.id}`} >
         <Button style={{"backgroundColor":"tomato", "color":"white","minWidth":"123px"}} size="large" color="primary">
           Read More
         </Button>
+        </NavLink >
         <Button disabled={exist(shoe.id)} style={{"margin-left":"40%"}} onClick={()=>addCart(shoe.id)} size="small" color="primary">
        { exist(shoe.id) ?   "added": <ShoppingCart /> } 
         </Button>

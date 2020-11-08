@@ -5,15 +5,22 @@ import Icon from "../images/icon.png"
 
 import { NavLink } from 'react-router-dom';
 
-import { Badge, IconButton } from '@material-ui/core';
+import { Badge, IconButton, makeStyles } from '@material-ui/core';
 import { ShoeContext } from '../Context/ShoeContext';
+
   
+const useStyles = makeStyles((theme) => ({ 
+  f:{
+    flex:1
+  }
+}))
 const Header = () => {
   const {CountItems} = useContext(ShoeContext)
+  const classes=useStyles();
     return (
        <>
             <div className="header">
-            <NavLink to="/home"  ><img className="logo" src={Icon} alt="" /></NavLink>
+            <NavLink className={classes.f} to="/home"  ><img className="logo" src={Icon} alt="" /></NavLink>
               <div className="options">
                 
                   <NavLink className="options__text" to="/home"  >Home</NavLink>

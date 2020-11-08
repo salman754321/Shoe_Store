@@ -7,7 +7,7 @@
 
 .sec2{
    
-    height: 646px;
+    height: 850px;
     
     width: 60%;
     margin-top: 15%;
@@ -21,7 +21,7 @@ position: absolute;
    width: 60%;
   
    justify-items: center;
-   height: 968px;
+   height: 1211px;
    clip-path: polygon(0 0,100% 0,100% 100%,30% 100%);
    
 }
@@ -42,8 +42,7 @@ position: absolute;
 .im{
     
 
-    width: 500px;
-    height: 500px;
+   
     
     margin-top: 10%;
 }
@@ -51,7 +50,7 @@ position: absolute;
     clear: both;
 }
 .sec3{
-    left: 800px;
+    left: 850px;
     width: 20%;
     z-index: 1;
     position: absolute;

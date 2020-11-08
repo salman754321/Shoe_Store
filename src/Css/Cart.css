@@ -3,7 +3,6 @@
     background-size:cover ;
     clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
     height: 15vh;
-    position: relative;
 }
 
 .body{
@@ -31,6 +30,24 @@
 
 .asd{
     margin: 0 auto;
+  
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 15%;
+    
+}
+
+.as{
+    font-size: 25px;
+    font-weight: bolder;   
+}
+
+.wr{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.no{
+    margin: 0 auto;
     background-color:rgb(183 159 159 / 12%);
     height: 300px;
     width: 700px;
@@ -38,5 +55,4 @@
     font-size: 50px;
     font-weight: bolder;
     margin-top: 10%;
-    padding: 70px 0;
 }
