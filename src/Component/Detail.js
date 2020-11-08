@@ -18,7 +18,7 @@ function Detail({id}) {
         <div>
             <Grid justify="center" direction="row" container>
                 <Grid item xs={4}>
-                <img className="im" src={shoe[0].image} alt="" />
+                <img className="imm" src={shoe[0].image} alt="" />
                 </Grid>
                 <Grid  item xs={4}>
                <Typography align="center" variant="h3">
